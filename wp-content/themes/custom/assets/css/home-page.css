@@ -1,0 +1,83 @@
+.home-page {
+  background: black;
+}
+
+.home-page .banner {
+  display: flex;
+  height: 600px;
+  background: url("../img/home-banner.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.home-page .banner .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.73);
+  width: 450px;
+  height: 450px;
+}
+
+.home-page .banner .box h1 {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.home-page .banner .box h2 {
+  font-size: 45px;
+  font-weight: bold;
+  color: #446084;
+  margin: 0;
+}
+
+.home-page .banner .box ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.home-page .banner .box ul li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.home-page .banner .box ul li::before {
+  content: "";
+  position: relative;
+  background: url("../img/list-style.webp");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.home-page .banner .box > a {
+  color: white;
+  gap: 10px;
+  background-color: #d6440e;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.home-page .banner .box > a i {
+  margin-right: 10px;
+}

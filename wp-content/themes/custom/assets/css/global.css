@@ -1,0 +1,28 @@
+html {
+  font-family: "Open Sans", sans-serif;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: initial;
+  text-decoration: none;
+}
+
+.container {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+@media only screen and (max-width: 1025px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
