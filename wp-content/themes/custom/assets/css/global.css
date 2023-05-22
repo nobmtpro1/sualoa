@@ -20,6 +20,34 @@ a {
   padding-right: 150px;
 }
 
+.paginate {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 15px;
+}
+
+.paginate a,
+.paginate span {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  font-size: 15px;
+  line-height: 1;
+  border-radius: 5px;
+  border: 2px #446084 solid;
+  color: #446084;
+  font-weight: bold;
+  width: auto;
+  padding: 10px;
+}
+
+.paginate span {
+  background: #446084;
+  color: white;
+}
+
 @media only screen and (max-width: 1025px) {
   .container {
     padding-left: 15px;
