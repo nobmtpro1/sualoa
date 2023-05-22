@@ -1,0 +1,119 @@
+.post-page .banner {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  background: #223042;
+  color: white;
+  padding: 70px 0;
+  margin-bottom: 70px;
+}
+
+.post-page .banner .category {
+  color: whitesmoke;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.post-page .banner .title {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.post-page .banner .title::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  width: 100px;
+  height: 3px;
+  transform: translateX(-50%);
+  background: rgba(245, 245, 245, 0.824);
+}
+
+.post-page .content {
+  margin-bottom: 150px;
+  position: relative;
+}
+
+.post-page .content::after {
+  content: "";
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  width: 100px;
+  height: 3px;
+  transform: translateX(-50%);
+  background: #223042;
+}
+
+.post-page .owner {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 70px;
+}
+
+.post-page .owner .logo {
+  width: 180px;
+}
+
+.post-page .owner .logo img {
+  width: 100%;
+  height: auto;
+}
+
+.post-page .owner .text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.post-page .owner .text .name {
+  font-weight: bold;
+  font-size: 25px;
+  color: #446084;
+}
+
+.post-page .owner .text .description {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.post-page .links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.post-page .links a {
+  flex: 1;
+  border: 1px solid #ececec;
+  color: #dd3333;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 1025px) {
+    .post-page .owner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .post-page .owner .text .description {
+        font-size: 15px;
+        line-height: 25px;
+      }
+
+    .post-page .links a {
+        font-size: 15px;
+      }
+}
