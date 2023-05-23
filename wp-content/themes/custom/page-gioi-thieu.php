@@ -1,5 +1,8 @@
 <?= get_header() ?>
 <div class="introduce-page">
+    <div class="banner container">
+        <h1 class="title"><?php the_title() ?></h1>
+    </div>
     <div class="box-introduce-container container">
         <div class="bg-img-introduce">
             <img src="<?= bloginfo('template_directory') ?>/assets/img/bg-dich-vu.webp" alt="img">
