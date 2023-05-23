@@ -1,0 +1,235 @@
+.introduce-page {
+  background-color: white;
+}
+
+.introduce-page .box-introduce-container {
+  background-color: white;
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 50px 0 100px 0;
+}
+
+.introduce-page .box-introduce-container .bg-img-introduce {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.introduce-page .bg-img-introduce > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.introduce-page .bg-img-introduce .wrapper-img-introduce {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.introduce-page .wrapper-img-introduce > img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.introduce-page .box-introduce-container .bg-txt-introduce {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex: 1;
+}
+
+.introduce-page .bg-txt-introduce .box-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.introduce-page .bg-txt-introduce .box-txt > h2 {
+  font-weight: bolder;
+  margin: 0;
+  color: #446084;
+  text-align: center;
+  font-size: 1.6em;
+  line-height: 1.3;
+}
+
+.introduce-page .bg-txt-introduce .box-txt .line{
+  width: 20px;
+  height: 3px;
+  background-color: #446084;
+}
+
+.introduce-page .bg-txt-introduce .box-txt > p{
+  margin: 0;
+  line-height: 1.8;
+  color: #222222;
+  text-align: justify;
+  font-weight: 600;
+}
+
+.introduce-page .box-txt .wrapper-introduce{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15px;
+}
+
+.introduce-page .section-content-teachnician-team{
+  background: url("../img/bg-technicianTeam.webp");
+  background-size: contain;
+  content: "";
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  display: flex;
+}
+
+.introduce-page .section-content-teachnician-team .wrapper-content-teach{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 0 100px 0;
+}
+
+.introduce-page .wrapper-content-teach >h2{
+  font-weight: bolder;
+  margin: 0;
+  color: #446084;
+  text-align: center;
+  font-size: 1.6em;
+  line-height: 1.3;
+}
+
+.introduce-page .wrapper-content-teach .line{
+  width: 20px;
+  height: 3px;
+  background-color: #446084;
+}
+
+.introduce-page .wrapper-content-teach > p {
+  text-align: justify;
+  color: #222222;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.introduce-page .section-content-customer-support{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.introduce-page .section-content-customer-support >h2{
+  font-weight: bolder;
+  margin: 50px 0 0 0;
+  color: #446084;
+  text-align: center;
+  font-size: 1.6em;
+  line-height: 1.3;
+}
+
+.introduce-page .section-content-customer-support .line{
+  width: 20px;
+  height: 3px;
+  background-color: #446084;
+}
+
+.introduce-page .section-content-customer-support >p{
+  text-align: justify;
+  color: #222222;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.introduce-page .section-content-customer-support .bot-customer-support{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+
+.introduce-page .bot-customer-support .box-customer-support{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: last baseline;
+  gap: 20px;
+  flex: 1;
+}
+
+.introduce-page .bot-customer-support .box-customer-supports{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  flex: 1;
+  height: 300px;
+}
+
+.introduce-page .bot-customer-support .box-customer-support > img{
+  width: 100%;
+  object-fit: contain;
+  height: 300px;
+}
+
+.introduce-page .bot-customer-support .wrapper-sp{
+  display: flex;
+  flex-direction: column;
+}
+
+.introduce-page .box-customer-supports .child-item{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.introduce-page .box-customer-supports .child-item > span{
+  color: #333333;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.introduce-page .box-customer-supports .child-item > img{
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 1025px) {
+  .introduce-page .box-introduce-container{
+    flex-direction: column-reverse;
+  }
+  .introduce-page .section-content-customer-support .bot-customer-support{
+    flex-direction: column;
+  }
+  .introduce-page .bot-customer-support .box-customer-support > img{
+    height: auto;
+  }
+  .introduce-page .bot-customer-support .box-customer-supports{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .introduce-page .section-content-teachnician-team{
+    flex-direction: column;
+  }
+  .introduce-page .wrapper-content-teach > p{
+    color: currentcolor;
+  }
+}

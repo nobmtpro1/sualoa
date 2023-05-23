@@ -89,3 +89,8 @@ a {
     padding-right: 15px;
   }
 }
+
+.block-text{
+  background: black;
+  color: white;
+}

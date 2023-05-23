@@ -1,0 +1,233 @@
+.footer {
+  background-color: white;
+}
+
+.footer .footer-contact {
+  background: url("../img/bg-footer-contact.webp");
+  background-size: contain;
+  content: "";
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 100%;
+  padding: 50px 0 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .footer-contact .bg-layout-contact {
+  background-color: rgba(255, 255, 255, 0.69);
+  padding: 40px 20px 30px 20px;
+  min-width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footer .bg-layout-contact .header-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: -webkit-fill-available;
+}
+
+.footer .header-contact .line {
+  width: 100%;
+  flex: 1;
+  height: 1px;
+  background-color: #446084;
+}
+
+.footer .header-contact > h2 {
+  color: #446084;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 25px;
+  margin: 0;
+}
+
+.footer .bg-layout-contact .form-contact {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #446084;
+  padding: 10px 40px 20px 40px;
+  background-color: rgba(255, 255, 255, 0.69);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footer .bg-layout-contact .form-contact > p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  color: #000000;
+  text-align: center;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.footer .bg-layout-contact .form-contact > p > a {
+  color: red;
+}
+
+.footer .bg-layout-contact .btn-call {
+  font-size: 1.3em;
+  background-color: #d6440e;
+  border-radius: 99px;
+  color: #fff;
+  padding: 25px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.footer .bg-layout-contact .btn-call > i {
+  font-size: 23px;
+  color: white;
+}
+
+.footer .layout-footer {
+  background-color: #3d5779;
+}
+
+.footer .layout-footer .box-footer {
+  padding: 50px 0 80px 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 30px;
+  color: white;
+}
+
+.footer .box-footer .wrapper-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  gap: 15px;
+  flex: 1;
+}
+
+.footer .box-footer .wrapper-box > h2 {
+  font-size: 1.7em;
+  margin: 0;
+}
+
+.footer .wrapper-box .line {
+  width: 20px;
+  height: 1px;
+  background-color: #597396;
+}
+
+.footer .box-footer .wrapper-box > p {
+  margin: 0;
+  line-height: 1.8;
+}
+
+.footer .box-footer .wrapper-box .btn-hotline {
+  background-color: #ff6666;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.97em;
+  cursor: pointer;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration: none;
+}
+.footer .box-footer .wrapper-box .btn-ctv {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.97em;
+  cursor: pointer;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration: none;
+}
+
+.footer .box-footer .wrapper-box .bg-access-social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.footer .wrapper-box .bg-access-social > img {
+  width: auto;
+  height: 78px;
+  object-fit: cover;
+}
+
+.footer .box-footer .wrapper-box .box-bg-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: -webkit-fill-available;
+}
+
+.footer .box-footer .wrapper-box .box-bg-social > i {
+  color: #999999;
+  font-size: 28px;
+}
+
+.footer .box-footer .wrapper-box > span {
+  font-size: 1.1em;
+}
+
+.footer .box-footer .wrapper-box .bg-line {
+  width: -webkit-fill-available;
+  height: 1px;
+  background-color: #909baa;
+}
+
+.footer .box-Copyright {
+  background-color: #5b5b5b;
+}
+
+.footer .box-Copyright > p {
+  background-color: #5b5b5b;
+  padding: 10px 0 20px 0;
+  margin: 0;
+  font-weight: bolder;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9em;
+}
+
+.footer .box-Copyright > p >span {
+  font-weight: 900;
+}
+
+@media only screen and (max-width: 1025px) {
+  .footer .layout-footer .box-footer {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .footer .box-footer .wrapper-box {
+    width: -webkit-fill-available;
+  }
+}
