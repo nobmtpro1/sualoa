@@ -40,6 +40,7 @@
 .post-page .content {
   margin-bottom: 150px;
   position: relative;
+  zoom: 110%;
 }
 
 .post-page .content::after {
@@ -102,18 +103,18 @@
 }
 
 @media only screen and (max-width: 1025px) {
-    .post-page .owner {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+  .post-page .owner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-    .post-page .owner .text .description {
-        font-size: 15px;
-        line-height: 25px;
-      }
+  .post-page .owner .text .description {
+    font-size: 15px;
+    line-height: 25px;
+  }
 
-    .post-page .links a {
-        font-size: 15px;
-      }
+  .post-page .links a {
+    font-size: 15px;
+  }
 }

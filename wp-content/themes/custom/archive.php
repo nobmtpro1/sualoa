@@ -1,7 +1,7 @@
 <?= get_header() ?>
 
 <div class="category-page container">
-    <h1 class="category-title"><?= single_cat_title() ?></h1>
+    <h1 class="category-title"> <?= single_cat_title() ?> <?= is_search() ? 'Tìm kiếm: ' . @$_GET['s'] : '' ?></h1>
     <?= category_description() ?>
     <div class="main-content">
         <div class="left">
