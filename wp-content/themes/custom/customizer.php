@@ -64,9 +64,9 @@ function theme_name_register_theme_customizer($wp_customize)
     ));
     add_input($wp_customize, 'text', 'footer_system', 'footer_system_description', 'Mô tả');
 
-    for ($i = 1; $i < 20; $i++) {
-        add_input($wp_customize, 'text', 'footer_system', 'footer_system_' . $i, 'Địa chỉ ' . $i);
-    }
+    // for ($i = 1; $i < 20; $i++) {
+    //     add_input($wp_customize, 'text', 'footer_system', 'footer_system_' . $i, 'Địa chỉ ' . $i);
+    // }
 
     $wp_customize->add_section('footer_link', array(
         'title'    => __('Link', 'theme-name'),

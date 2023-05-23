@@ -3,34 +3,34 @@
     <div class="banner">
         <div class="container">
             <div class="box">
-                <h1>TRUNG TÂM SỬA ĐIỆN LẠNH – ĐIỆN TỬ</h1>
-                <h2>suadienlanh.vn</h2>
+                <h1><?= bloginfo('name') ?></h1>
+                <h2><?= $_SERVER['SERVER_NAME']; ?></h2>
                 <ul>
                     <li> Dịch vụ Uy tín – Nhanh chóng</li>
                     <li>Miễn phí kiểm tra thiết bị tại nhà</li>
                     <li>Chính sách bảo hành dài hạn</li>
                 </ul>
-                <a><i class="fa-solid fa-phone"></i> <span> Gọi Thợ Ngay</span></a>
+                <a href="tel:<?= get_theme_mod('info_basic_phone') ?>"><i class="fa-solid fa-phone"></i> <span> Gọi Thợ Ngay</span></a>
             </div>
         </div>
     </div>
 
     <!-- Kien -->
-    <div class="section-content">
+    <div class="section-content container">
         <div class="wrapper-box-child">
             <img src="<?= bloginfo('template_directory') ?>/assets/img/ic-clock.webp" alt="icon clock">
             <p class="box-title">Thời gian làm việc</p>
-            <span class="box-desc">Thứ Hai – Chủ Nhật: 8AM – 7PM</span>
+            <span class="box-desc"><?= get_theme_mod('info_basic_work_day') ?>: <?= get_theme_mod('info_basic_work_time') ?></span>
         </div>
         <div class="wrapper-box-child">
-        <img src="<?= bloginfo('template_directory') ?>/assets/img/ic-moreAccount.webp" alt="icon more account">
+            <img src="<?= bloginfo('template_directory') ?>/assets/img/ic-moreAccount.webp" alt="icon more account">
             <p class="box-title">Địa chỉ</p>
-            <span class="box-desc">249/44/3a Vườn Lài, P. Phú Thọ Hoà, Q. Tân Phú, Tp.HCM</span>
+            <span class="box-desc"><?= get_theme_mod('info_basic_address') ?></span>
         </div>
         <div class="wrapper-box-child">
-        <img src="<?= bloginfo('template_directory') ?>/assets/img/ic-moreAccount.webp" alt="icon more account">
-            <p class="box-title">Thời gian làm việc</p>
-            <span class="box-desc">0767 165 660</span>
+            <img src="<?= bloginfo('template_directory') ?>/assets/img/ic-moreAccount.webp" alt="icon more account">
+            <p class="box-title">HỖ TRỢ KHÁCH HÀNG</p>
+            <span class="box-desc"><?= get_theme_mod('info_basic_phone') ?></span>
         </div>
     </div>
 
@@ -54,9 +54,10 @@
             </div>
             <div class="circle-img">
                 <img src="<?= bloginfo('template_directory') ?>/assets/img/bg-circle-choose-us.webp" alt="bg-circle-choose-us">
-                <div class="btn-see-more">
+                <a href="<?= bloginfo('url') ?>/gioi-thieu" class="btn-see-more">
                     <img src="<?= bloginfo('template_directory') ?>/assets/img/ic-reverse-arrow.png" alt="button ic">
-                    XEM THÊM</div>
+                    XEM THÊM
+                </a>
             </div>
             <div class="content-container">
                 <div class="wrapper-box-txt-choose-us">
@@ -65,7 +66,7 @@
                 </div>
                 <div class="wrapper-box-txt-choose-us">
                     <h4>TƯ VẤN 24/7</h4>
-                    <span>Suadienlanh.vn hỗ trợ tư vấn khách hàng 24/7 bất kể ngày lễ hay chủ nhật</span>
+                    <span>Hỗ trợ tư vấn khách hàng 24/7 bất kể ngày lễ hay chủ nhật</span>
                 </div>
             </div>
         </div>
@@ -80,27 +81,39 @@
         </div>
         <div class="container-service container">
             <div class="menu-navigation">
-                <div class="title-menu bottom">
-                    Sửa máy lạnh
-                </div>
-                <div class="title-menu bottom">
-                    Sửa máy giặt
-                </div>
-                <div class="title-menu bottom">
-                    Sửa lò vi sóng
-                </div>
-                <div class="title-menu bottom">
-                    Sửa máy nước nóng lạnh
-                </div>
-                <div class="title-menu bottom">
-                    Sửa cây nước nóng lạnh
-                </div>
+                <?php for ($i = 1; $i < 20; $i++) {
+                    $name = get_theme_mod('featured_services_name_' . $i);
+                    $image = get_theme_mod('featured_services_image_' . $i);
+                    $description = get_theme_mod('featured_services_description_' . $i);
+                    if (!$name) {
+                        continue;
+                    }
+                ?>
+                    <div class="title-menu bottom <?= $i == 1 ? 'active' : '' ?>" data-id="<?= $i ?>">
+                        <?= $name ?>
+                    </div>
+                <?php
+                } ?>
+
+
             </div>
-            <div class="menu-desc">
-                <img src="<?= bloginfo('template_directory') ?>/assets/img/bg-service.webp" alt="img bg">
-                <p>DỊCH VỤ SỬA MÁY LẠNH</p>
-                <span>Sở hữu đội ngũ kỹ thuật viên dày dặn kinh nghiệm, suadienlanh.vn tự tin cung cấp cho khách hàng dịch vụ sửa chữa máy lạnh Uy tín – Chất lượng hàng đầu tại TPHCM.</span>
-            </div>
+
+            <?php for ($i = 1; $i < 20; $i++) {
+                $name = get_theme_mod('featured_services_name_' . $i);
+                $image = get_theme_mod('featured_services_image_' . $i);
+                $description = get_theme_mod('featured_services_description_' . $i);
+                if (!$name) {
+                    continue;
+                }
+            ?>
+                <div class="menu-desc  <?= $i == 1 ? 'active' : '' ?>" data-id="<?= $i ?>">
+                    <img src="<?= wp_get_attachment_image_url($image, 'full') ?>" alt="img bg">
+                    <p><?= $name ?></p>
+                    <span><?= $description ?></span>
+                </div>
+            <?php
+            } ?>
+
         </div>
     </div>
 
@@ -112,20 +125,20 @@
             <div class="line"></div>
         </div>
         <div class="bg-img-our-project container">
-            <div class="grid-item item1" >
-                <img src="<?= bloginfo('template_directory') ?>/assets/img/bg-img1.jpg" alt="bg img">
+            <div class="grid-item item1">
+                <img src="<?= bloginfo('template_directory') ?>/assets/img/grid1.webp" alt="bg img">
             </div>
-            <div class="grid-item item2" >
-                <img src="<?= bloginfo('template_directory') ?>/assets/img/bg-img2.jpg" alt="bg img">
+            <div class="grid-item item2">
+                <img src="<?= bloginfo('template_directory') ?>/assets/img/grid2.webp" alt="bg img">
             </div>
-            <div class="grid-item item3" >
-                <img src="<?= bloginfo('template_directory') ?>/assets/img/bg-img3.jpg" alt="bg img">
+            <div class="grid-item item3">
+                <img src="<?= bloginfo('template_directory') ?>/assets/img/grid3.webp" alt="bg img">
             </div>
-            <div class="grid-item item4" >
-                <img src="<?= bloginfo('template_directory') ?>/assets/img/bg-img4.jpg" alt="bg img">
+            <div class="grid-item item4">
+                <img src="<?= bloginfo('template_directory') ?>/assets/img/grid4.webp" alt="bg img">
             </div>
-            <div class="grid-item item5" >
-                <img src="<?= bloginfo('template_directory') ?>/assets/img/bg-img5.jpg" alt="bg img">
+            <div class="grid-item item5">
+                <img src="<?= bloginfo('template_directory') ?>/assets/img/grid5.webp" alt="bg img">
             </div>
         </div>
     </div>
@@ -158,24 +171,26 @@
             <div class="line"></div>
         </div>
         <div class="container-blog">
-            <div class="box-blog-item">
-                <h5>Máy lạnh Toshiba báo lỗi 14 – Nguyên nhân và cách khắc phục</h5>
-                <p>22/05/2023</p>
-                <div class="line"></div>
-                <span>Dù có tối ưu đến đâu thì qua thời gian sử dụng, máy lạnh Toshiba [...]</span>
-            </div>
-            <div class="box-blog-item">
-                <h5>Máy lạnh Toshiba báo lỗi 14 – Nguyên nhân và cách khắc phục</h5>
-                <p>22/05/2023</p>
-                <div class="line"></div>
-                <span>Dù có tối ưu đến đâu thì qua thời gian sử dụng, máy lạnh Toshiba [...]</span>
-            </div>
-            <div class="box-blog-item">
-                <h5>Máy lạnh Toshiba báo lỗi 14 – Nguyên nhân và cách khắc phục</h5>
-                <p>22/05/2023</p>
-                <div class="line"></div>
-                <span>Dù có tối ưu đến đâu thì qua thời gian sử dụng, máy lạnh Toshiba [...]</span>
-            </div>
+
+            <?php
+            $newsCategory = get_category_by_slug('tin-tuc');
+            $latestNews = (new WP_Query([
+                'post_type' => 'post',
+                'category__and' => $newsCategory->term_id,
+                'orderby'   => array(
+                    'date' => 'DESC',
+                ),
+                'posts_per_page' => 3
+            ]));
+            ?>
+            <?php foreach ($latestNews->posts as $post) : ?>
+                <a href="<?= get_permalink($post) ?>" class="box-blog-item">
+                    <h5><?= $post->post_title ?></h5>
+                    <p><?= get_the_date('d-m-Y', $post); ?></p>
+                    <div class="line"></div>
+                    <span><?= get_the_excerpt($post) ?></span>
+                </a>
+            <?php endforeach; ?>
         </div>
     </div>
 

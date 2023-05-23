@@ -22,7 +22,7 @@
                 <?= get_custom_logo() ?>
             </div>
             <div class="right">
-                <div class="search"  id="show-search-form">
+                <div class="search" id="show-search-form">
                     <i class="fas fa-search"></i>
                     <div class="form-search" id="search-form">
                         <form action="<?= bloginfo('url') ?>" class="form">
@@ -34,11 +34,11 @@
                 <div class="info">
                     <div>
                         <i class="fa-solid fa-clock"></i>
-                        8AM - 7PM
+                        <?= get_theme_mod('info_basic_work_time') ?>
                     </div>
                     <div>
                         <i class="fa-solid fa-phone"></i>
-                        0767 165 660
+                        <?= get_theme_mod('info_basic_phone') ?>
                     </div>
                 </div>
             </div>
