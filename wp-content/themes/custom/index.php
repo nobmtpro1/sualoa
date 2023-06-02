@@ -76,7 +76,7 @@
         <div class="header-service container">
             <div class="line"></div>
             <i class="fa-solid fa-bars"></i>
-            <h2>DỊCH VỤ SỬA ĐIỆN LẠNH - ĐIỆN TỬ NỔI BẬT</h2>
+            <h2>DỊCH VỤ SỬA LOA NỔI BẬT</h2>
             <div class="line"></div>
         </div>
         <div class="container-service container">
@@ -185,6 +185,9 @@
             ?>
             <?php foreach ($latestNews->posts as $post) : ?>
                 <a href="<?= get_permalink($post) ?>" class="box-blog-item">
+                    <div class="image">
+                        <img style="width: 100%; height:200px; object-fit:cover" src="<?= get_the_post_thumbnail_url(get_the_ID(), 'full') ?>" alt="">
+                    </div>
                     <h5><?= $post->post_title ?></h5>
                     <p><?= get_the_date('d-m-Y', $post); ?></p>
                     <div class="line"></div>

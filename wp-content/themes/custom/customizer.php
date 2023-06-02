@@ -22,7 +22,7 @@ function add_input($wp_customize, $type, $section, $name, $title)
                     'label'    =>  $title,
                     'section'  => $section,
                     'settings' => $name,
-                    'type'     => 'text'
+                    'type'     => 'textarea'
                 )
             )
         );

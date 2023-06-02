@@ -14,9 +14,9 @@
             <?= get_custom_logo() ?>
         </div>
         <div class="text">
-            <div class="name">VÕ VĂN HẢI</div>
+            <div class="name"><?= bloginfo('name') ?></div>
             <div class="description">
-                Tôi là Võ Văn Hải hiện là Giám đốc kỹ thuật tại trung tâm sửa điện lạnh - điện tử Suadienlanh.vn - Là một chuyên gia thuộc lĩnh vực điện lạnh hơn 10 năm qua. Tôi mong muốn chia sẻ những kiến thức chuyên môn cần thiết thông trên website về điện lạnh - điện tử đến cho tất cả mọi người.
+                 Dịch vụ sửa chữa LOA gấp trong thời gian nhanh nhất giúp quí khách hàng tiết kiệm được thời gian đi lại
             </div>
         </div>
     </div>
