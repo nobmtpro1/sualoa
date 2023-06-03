@@ -186,7 +186,7 @@
             <?php foreach ($latestNews->posts as $post) : ?>
                 <a href="<?= get_permalink($post) ?>" class="box-blog-item">
                     <div class="image">
-                        <img style="width: 100%; height:200px; object-fit:cover" src="<?= get_the_post_thumbnail_url(get_the_ID(), 'full') ?>" alt="">
+                        <img style="width: 100%; height:200px; object-fit:cover" src="<?= get_the_post_thumbnail_url(get_the_ID(), 'full') ?>" alt="<?= $post->post_title ?>">
                     </div>
                     <h5><?= $post->post_title ?></h5>
                     <p><?= get_the_date('d-m-Y', $post); ?></p>
