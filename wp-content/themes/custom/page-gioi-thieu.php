@@ -5,11 +5,11 @@
     </div>
     <div class="box-introduce-container container">
         <div class="bg-img-introduce">
-            <img src="<?= bloginfo('template_directory') ?>/assets/img/bg-dich-vu.webp" alt="img">
+            <img src="<?= bloginfo('template_directory') ?>/assets/img/anh1 (7).jpg" alt="img">
             <div class="wrapper-img-introduce">
-                <img src="<?= bloginfo('template_directory') ?>/assets/img/bg-dich-vu1.jpg" alt="img">
-                <img src="<?= bloginfo('template_directory') ?>/assets/img/bg-dich-vu2.jpg" alt="img">
-                <img src="<?= bloginfo('template_directory') ?>/assets/img/bg-dich-vu3.jpg" alt="img">
+                <img src="<?= bloginfo('template_directory') ?>/assets/img/anh1 (3).jpg" alt="img">
+                <img src="<?= bloginfo('template_directory') ?>/assets/img/anh1 (4).jpg" alt="img">
+                <img src="<?= bloginfo('template_directory') ?>/assets/img/anh1 (5).jpg" alt="img">
             </div>
         </div>
         <div class="bg-txt-introduce">
@@ -53,7 +53,7 @@
         <p><?= get_theme_mod('policy') ?></p>
         <div class="bot-customer-support">
             <div class="box-customer-support">
-                <img src="<?= bloginfo('template_directory') ?>/assets/img/bg-bat-tay.jpg" alt="img">
+                <img src="<?= bloginfo('template_directory') ?>/assets/img/anh1 (1).jpg" alt="img">
             </div>
             <div class="box-customer-supports">
                 <div class="child-item">
