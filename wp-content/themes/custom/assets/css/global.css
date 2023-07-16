@@ -15,6 +15,10 @@ a {
   text-decoration: none;
 }
 
+code {
+  color: white !important;
+}
+
 .container {
   padding-left: 150px;
   padding-right: 150px;
@@ -72,11 +76,11 @@ a {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.wpcf7-form textarea{
+.wpcf7-form textarea {
   height: auto;
 }
 
-.wpcf7-submit{
+.wpcf7-submit {
   background: #446084 !important;
   color: white !important;
   cursor: pointer !important;
@@ -90,7 +94,7 @@ a {
   }
 }
 
-.block-text{
+.block-text {
   background: black;
   color: white;
 }
